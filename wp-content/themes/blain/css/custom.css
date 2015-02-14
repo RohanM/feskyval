@@ -85,3 +85,21 @@ footer#colophon .site-footer {
 footer#colophon .site-footer .copyright {
   padding: 10px;
 }
+
+footer#colophon .navbar-collapse, footer#colophon ul.nav {
+  margin: 0;
+  padding: 0;
+}
+footer#colophon .nav li {
+  margin:0 0 20px;
+  padding: 0 0 0 20px;
+  line-height: 0.8em;
+  background: transparent url(../images/footer_list_icon.png) no-repeat scroll 0 0px;
+}
+footer#colophon .nav li a {
+  padding: 0;
+  color: #000;
+}
+footer#colophon .nav li a:hover {
+  background-color: transparent;
+}

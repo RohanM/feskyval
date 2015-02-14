@@ -24,7 +24,7 @@
                    'depth'             => 1,
                    'container'         => 'div',
                    'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-                   'menu_class'        => 'nav navbar-nav',
+                   'menu_class'        => 'nav',
                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                    'walker'            => new wp_bootstrap_navwalker())
                  );
@@ -39,8 +39,8 @@
                    'theme_location'    => 'footer-info',
                    'depth'             => 1,
                    'container'         => 'div',
-                   'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-                   'menu_class'        => 'nav navbar-nav',
+                   'container_class'   => '',
+                   'menu_class'        => 'nav',
                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                    'walker'            => new wp_bootstrap_navwalker())
                  );

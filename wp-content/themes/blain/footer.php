@@ -14,6 +14,8 @@
           <div class="site-footer-top container row">
             <div class="col-md-3">
               <h3>Follow Us</h3>
+              <a href="http://www.facebook.com/Feskyval"><img src="wp-content/themes/blain/images/facebook.png" /></a>
+              <a href="http://www.twitter.com/feskyval"><img src="wp-content/themes/blain/images/twitter.png" /></a>
             </div>
             <div class="col-md-3">
               <h3>About Feskyval</h3>

@@ -1,6 +1,9 @@
 body {
   margin-top: -40px;
 }
+a, a:hover {
+  color: #ff4301;
+}
 
 #page {
   background-image: url(../images/Top-Image.jpg);
@@ -64,9 +67,6 @@ footer#colophon {
   padding-bottom: 0;
   background: url(../images/bottom_image.jpg) bottom left repeat-x;
   border: none;
-}
-footer#colophon a {
-  color: #000;
 }
 footer#colophon h3 {
   font-weight: bold;

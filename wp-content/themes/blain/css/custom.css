@@ -54,3 +54,34 @@ body {
     padding: 4px 0;
   }
 }
+
+#content {
+  background-color: transparent;
+}
+
+footer#colophon {
+  /*height: 150px;*/
+  padding-bottom: 0;
+  background: url(../images/bottom_image.jpg) bottom left repeat-x;
+  border: none;
+}
+
+footer#colophon h3 {
+  font-weight: bold;
+}
+
+footer#colophon .site-footer-top {
+  background-color: rgba(151, 219, 254, 0.5);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+footer#colophon .site-footer {
+  text-align: center;
+  background: #0a273a;
+  border-top: 1px solid #fff;
+  color: #ccc;
+}
+footer#colophon .site-footer .copyright {
+  padding: 10px;
+}

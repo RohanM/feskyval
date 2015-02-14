@@ -10,18 +10,56 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer container row" role="contentinfo">
-	<?php if ( of_get_option('credit1', true) == 0 ) { ?>
-		<div class="site-info col-md-5">
-			<?php do_action( 'blain_credits' ); ?>
-			<?php printf( __( 'Blain Theme by %1$s.', 'blain' ), '<a href="http://inkhive.com/" rel="designer">InkHive</a>' ); ?>
-		</div><!-- .site-info -->
-	<?php } ?>	
-		<div id="footertext" class="col-md-7">
-        	<?php
-			if ( (function_exists( 'of_get_option' ) && (of_get_option('footertext2', true) != 1) ) ) {
-			 	echo of_get_option('footertext2', true); } ?>
-        </div>   
+	<footer id="colophon" role="contentinfo">
+          <div class="site-footer-top container row">
+            <div class="col-md-3">
+              <h3>Follow Us</h3>
+            </div>
+            <div class="col-md-3">
+              <h3>About Feskyval</h3>
+
+              <?php
+                 wp_nav_menu( array(
+                   'theme_location'    => 'footer-about',
+                   'depth'             => 1,
+                   'container'         => 'div',
+                   'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+                   'menu_class'        => 'nav navbar-nav',
+                   'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                   'walker'            => new wp_bootstrap_navwalker())
+                 );
+              ?>
+
+            </div>
+            <div class="col-md-3">
+              <h3>Feskyval Information</h3>
+
+              <?php
+                 wp_nav_menu( array(
+                   'theme_location'    => 'footer-info',
+                   'depth'             => 1,
+                   'container'         => 'div',
+                   'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+                   'menu_class'        => 'nav navbar-nav',
+                   'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                   'walker'            => new wp_bootstrap_navwalker())
+                 );
+              ?>
+
+            </div>
+            <div class="col-md-3">
+              <h3>Contact Us</h3>
+              <p>
+                If you have any enquires, feel free to contact us at:
+                <a href="mailto:feskyval@gmail.com">feskyval@gmail.com</a>
+              </p>
+            </div>
+          </div>
+	  <div class="site-footer container row">
+	    <div class="copyright col-md-12">
+	      Copyright &copy; <?php echo date("Y") ?> Feskyval
+	    </div><!-- .site-info -->
+	  </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

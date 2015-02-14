@@ -37,6 +37,8 @@ function blain_setup() {
 
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'blain' ),
+		'footer-about' => __( 'Footer About Menu', 'blain' ),
+		'footer-info' => __( 'Footer Info Menu', 'blain' )
 	) );
 	add_theme_support( 'post-formats', array( 'image', 'video', 'quote' ) );
 
